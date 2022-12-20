@@ -73,7 +73,7 @@ const TodoForm = ({ todoAdd, todoEdit, todoUpdate, setTodoEdit }) => {
 
   return (
     <>
-      <h2 className='text-center display-5'>{todoEdit ? 'Actualizar Tarea' : 'Nueva Tarea'}</h2>
+      <h2 className='text-center display-5 text-white bg-dark'>{todoEdit ? 'Actualizar Tarea' : 'Nueva Tarea'}</h2>
       {
         todoEdit &&
 

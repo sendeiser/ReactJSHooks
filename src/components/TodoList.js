@@ -13,7 +13,7 @@ const TodoList = ({ todo, todoDelete, todoCambioComplete,setTodoEdit }) => {
 
     return (
         <>
-            <h1 className='text-end display-4'>Soy TodoList</h1>
+            <h1 className='text-end display-4 text-white bg-dark'>Lista de Tareas</h1>
 
 
             {

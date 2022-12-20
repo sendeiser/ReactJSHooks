@@ -1,6 +1,8 @@
 import React, { useState,useEffect } from 'react';
 import TodoForm from './components/TodoForm';
 import TodoList from './components/TodoList';
+import './App.css';
+
 
 const initialTodos = [
   {
@@ -107,9 +109,11 @@ const App = () => {
   }
 
   return (
-    <div className='container mt-4'>
-      <div className='row'>
-        <div className='col-8 border border-3 border-primary'>
+    
+    <div className='container mt-4 container-main'>
+      
+      <div className='row ' >
+        <div className='col-6'>
           <TodoList
             todo={todos}
             todoDelete={todoDelete}
@@ -117,7 +121,7 @@ const App = () => {
             setTodoEdit={setTodoEdit}
           />
         </div>
-        <div className='col-4 border border-3 border-primary'>
+        <div className='col-6 '>
           <TodoForm 
           todoAdd={todoAdd}
           todoEdit={todoEdit}
